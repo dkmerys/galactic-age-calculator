@@ -56,6 +56,11 @@ export class Calculator {
     this.person.timeLeft = Math.round(this.person.lifespan - this.person.age);
     return this.person.timeLeftMars = Math.round(this.person.timeLeft / marsAgeMult);
   }
+
+  yearsLeftJupiter() {
+    // this.person.timeLeft = Math.round(this.person.lifespan - this.person.age);
+    // return this.person.timeLeftJupiter = Math.round(this.person.timeLeft / jupiterAgeMult);
+  }
   
   mercuryCalc() {
     return this.person.mercuryAge = Math.round(this.person.age / mercuryAgeMult);
