@@ -36,7 +36,7 @@ export class Calculator {
   };
 
   yearsLeft() {
-    // return this.person.timeleft = Math.round(this.person.lifespan - this.person.age);
+    return this.person.timeleft = Math.round(this.person.lifespan - this.person.age);
   }
   
   mercuryCalc() {
