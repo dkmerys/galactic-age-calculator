@@ -81,4 +81,14 @@ describe ('Calculator', () => {
     calculator.createPerson();
     expect(calculator.person.lifespan).toEqual(80);
   })
+
+  test('should give Person object average lifespan remaining', () => {
+    let calculator = new Calculator;
+    let person = new Person ("25");
+    calculator.person = person;
+    calculator.person.gender = ("Female");
+    calculator.person.continent = ("Asia");
+    calculator.createPerson();
+    expect(calculator.person.timeleft).toEqual(50)
+  })
 })

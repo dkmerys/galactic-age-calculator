@@ -1,11 +1,11 @@
 
 
 export class Calculator {
-
+  
   constructor() {
     this.person = {};
   }
-
+  
   createPerson() {
     if ((this.person.gender === "Female") && (this.person.continent === "Africa")) {
       this.person.lifespan = 65;
@@ -34,7 +34,7 @@ export class Calculator {
       this.person.lifespan = 76;
     };
   };
-
+  
   mercuryCalc() {
     const mercuryAgeMult = 0.24;
     return this.person.mercuryAge = Math.round(this.person.age / mercuryAgeMult);
@@ -57,7 +57,7 @@ export class Calculator {
 }
 
 export class Person {
-  constructor(age, lifespan, mercuryAge, venusAge, marsAge, jupiterAge, gender, continent) {
+  constructor(age, lifespan, mercuryAge, venusAge, marsAge, jupiterAge, gender, continent, timeLeft) {
     this.age = age;
     this.lifespan = lifespan;
     this.mercuryAge = mercuryAge;
@@ -66,5 +66,6 @@ export class Person {
     this.jupiterAge = jupiterAge;
     this.gender = gender;
     this.continent = continent;
+    this.timeLeft = timeLeft
   }
 }
