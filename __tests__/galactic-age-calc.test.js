@@ -12,4 +12,10 @@ describe ('Calculator', () => {
     let person = new Person;
     expect(person).toEqual({});
   })
+
+  test('should add Person object to Calculator as nested object', () => {
+    let calculator = new Calculator;
+    let person = new Person("25", "79")
+    expect(calculator.person.age).toEqual("25");
+  })
 })
