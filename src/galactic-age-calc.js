@@ -48,8 +48,8 @@ export class Calculator {
   }
 
   yearsLeftVenus() {
-    // this.person.timeLeft = Math.round(this.person.lifespan - this.person.age);
-    // return this.person.timeLeftVenus = Math.round(this.person.timeLeft / VenusAgeMult);
+    this.person.timeLeft = Math.round(this.person.lifespan - this.person.age);
+    return this.person.timeLeftVenus = Math.round(this.person.timeLeft / venusAgeMult);
   }
   
   mercuryCalc() {
