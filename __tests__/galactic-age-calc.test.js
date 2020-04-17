@@ -22,9 +22,17 @@ describe ('Calculator', () => {
 
   test('should multiply person.age by mercAgeMult', () => {
     let calculator = new Calculator;
-    let person = new Person("18", "79");
+    let person = new Person("25", "79");
     calculator.person = person;
     calculator.mercuryCalc();
     expect(calculator.person.mercuryAge).toEqual(6);
+  })
+
+  test('should multiply person.age by venusAgeMult', () => {
+    let calculator = new Calculator;
+    let person = new Person("25", "79");
+    calculator.person = person;
+    calculator.venusCalc();
+    expect(calculator.person.mercuryAge).toEqual(16);
   })
 })
