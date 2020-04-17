@@ -15,14 +15,14 @@ describe ('Calculator', () => {
 
   test('should add Person object to Calculator as nested object', () => {
     let calculator = new Calculator;
-    let person = new Person("25", "79")
+    let person = new Person("25")
     calculator.person = person;
     expect(calculator.person.age).toEqual("25");
   })
 
   test('should multiply person.age by mercuryAgeMult', () => {
     let calculator = new Calculator;
-    let person = new Person("25",);
+    let person = new Person("25");
     calculator.person = person;
     calculator.mercuryCalc();
     expect(calculator.person.mercuryAge).toEqual(104);
@@ -30,7 +30,7 @@ describe ('Calculator', () => {
 
   test('should multiply person.age by venusAgeMult', () => {
     let calculator = new Calculator;
-    let person = new Person("25",);
+    let person = new Person("25");
     calculator.person = person;
     calculator.venusCalc();
     expect(calculator.person.venusAge).toEqual(40);
@@ -38,7 +38,7 @@ describe ('Calculator', () => {
 
   test('should multiply person.age by marsAgeMult', () => {
     let calculator = new Calculator;
-    let person = new Person("25",);
+    let person = new Person("25");
     calculator.person = person;
     calculator.marsCalc();
     expect(calculator.person.marsAge).toEqual(13);
@@ -46,7 +46,7 @@ describe ('Calculator', () => {
 
   test('should multiply person.age by jupiterAgeMult', () => {
     let calculator = new Calculator;
-    let person = new Person("25",);
+    let person = new Person("25");
     calculator.person = person;
     calculator.jupiterCalc();
     expect(calculator.person.jupiterAge).toEqual(2);
@@ -54,9 +54,21 @@ describe ('Calculator', () => {
 
   test('should give Person object lifespan based on continent and gender', () => {
     let calculator = new Calculator;
-    let person = new Person ("Female",);
+    let person = new Person ("25");
     calculator.person = person;
+    calculator.person.gender = ("Female");
+    calculator.person.continent = ("Europe")
     calculator.createPerson();
     expect(calculator.person.lifespan).toEqual(82)
+  })
+
+  test('should give Person object different lifespan based on different continent and gender selections', () => {
+    let calculator = new Calculator;
+    let person = new Person ("25");
+    calculator.person = person;
+    calculator.person.gender = ("Male");
+    calculator.person.continent = ("Africa")
+    calculator.createPerson();
+    expect(calculator.person.lifespan).toEqual(61);
   })
 })
