@@ -43,4 +43,12 @@ describe ('Calculator', () => {
     calculator.marsCalc();
     expect(calculator.person.marsAge).toEqual(47);
   })
+
+  test('should multiply person.age by jupiterAgeMult', () => {
+    let calculator = new Calculator;
+    let person = new Person("25", "79");
+    calculator.person = person;
+    calculator.jupiterCalc();
+    expect(calculator.person.jupiterAge).toEqual(297);
+  })
 })
