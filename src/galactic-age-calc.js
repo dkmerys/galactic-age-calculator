@@ -7,7 +7,7 @@ export class Calculator {
   
   constructor() {
     this.person = {};
-  }
+  };
   
   createPerson() {
     if ((this.person.gender === "Female") && (this.person.continent === "Africa")) {
@@ -100,5 +100,5 @@ export class Person {
     this.timeLeftMars = timeLeftMars;
     this.timeLeftJupiter = timeLeftJupiter;
     this.extraTime = extraTime
-  }
-}
+  };
+};
