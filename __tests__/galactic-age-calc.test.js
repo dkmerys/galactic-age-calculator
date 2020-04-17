@@ -124,4 +124,15 @@ describe ('Calculator', () => {
     calculator.yearsLeftMars();
     expect(calculator.person.timeLeftMars).toEqual(27)
   })
+
+  test('should give Person object average lifespan remaining on Jupiter', () => {
+    let calculator = new Calculator;
+    let person = new Person ("25");
+    calculator.person = person;
+    calculator.person.gender = ("Female");
+    calculator.person.continent = ("Asia");
+    calculator.createPerson();
+    calculator.yearsLeftJupiter();
+    expect(calculator.person.timeLeftJupiter).toEqual(4)
+  })
 })
