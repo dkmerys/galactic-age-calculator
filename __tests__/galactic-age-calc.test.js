@@ -35,4 +35,12 @@ describe ('Calculator', () => {
     calculator.venusCalc();
     expect(calculator.person.venusAge).toEqual(16);
   })
+
+  test('should multiply person.age by marsAgeMult', () => {
+    let calculator = new Calculator;
+    let person = new Person("25", "79");
+    calculator.person = person;
+    calculator.marsCalc();
+    expect(calculator.person.marsAge).toEqual(16);
+  })
 })
