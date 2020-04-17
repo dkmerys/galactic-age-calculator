@@ -4,3 +4,10 @@ export class Calculator {
    
   }
 }
+
+export class Person {
+  
+  constructor() {
+   
+  }
+}

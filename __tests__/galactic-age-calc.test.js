@@ -1,4 +1,6 @@
 import { Calculator } from './../src/galactic-age-calc.js'
+import { Person } from './../src/galactic-age-calc.js'
+
 describe ('Calculator', () => {
 
   test('should create new Calculator object', () => {
