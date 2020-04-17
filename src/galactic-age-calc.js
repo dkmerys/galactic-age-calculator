@@ -17,8 +17,8 @@ export class Calculator {
   }
 
   marsCalc () {
-    // const marsAgeMult = 1.88;
-    // return this.person.marsAge = Math.round(this.person.age * marsAgeMult);
+    const marsAgeMult = 1.88;
+    return this.person.marsAge = Math.round(this.person.age * marsAgeMult);
   }
 }
 
