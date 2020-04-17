@@ -7,9 +7,9 @@ export class Calculator {
   }
 
   createPerson() {
-    // if ((this.person.gender = "Female") && (this.person.continent = "Europe")) {
-    //   this.person.lifespan = 82;
-    // };
+    if ((this.person.gender = "Female") && (this.person.continent = "Europe")) {
+      this.person.lifespan = 82;
+    };
   };
 
   mercuryCalc() {
