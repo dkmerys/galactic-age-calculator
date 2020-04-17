@@ -41,6 +41,6 @@ describe ('Calculator', () => {
     let person = new Person("25", "79");
     calculator.person = person;
     calculator.marsCalc();
-    expect(calculator.person.marsAge).toEqual(16);
+    expect(calculator.person.marsAge).toEqual(47);
   })
 })
