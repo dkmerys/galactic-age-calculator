@@ -22,8 +22,8 @@ export class Calculator {
   }
 
   jupiterCalc () {
-    // const jupiterAgeMult = 11.86;
-    // return this.person.jupiterAge = Math.round(this.person.age * jupiterAgeMult);
+    const jupiterAgeMult = 11.86;
+    return this.person.jupiterAge = Math.round(this.person.age * jupiterAgeMult);
   }
 }
 
