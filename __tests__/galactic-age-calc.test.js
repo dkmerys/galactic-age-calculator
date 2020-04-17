@@ -51,4 +51,12 @@ describe ('Calculator', () => {
     calculator.jupiterCalc();
     expect(calculator.person.jupiterAge).toEqual(2);
   })
+
+  test('should give Person object lifespan based on continent and gender', () => {
+    let calculator = new Calculator;
+    let person = new Person;
+    calculator.person = person;
+    calculator.createPerson();
+    expect(calculator.person.lifespan).toEqual(81)
+  })
 })
