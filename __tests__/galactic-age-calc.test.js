@@ -71,4 +71,14 @@ describe ('Calculator', () => {
     calculator.createPerson();
     expect(calculator.person.lifespan).toEqual(61);
   })
+
+  test('should give Person object different lifespan based on different continent and gender selections', () => {
+    let calculator = new Calculator;
+    let person = new Person ("25");
+    calculator.person = person;
+    calculator.person.gender = ("Female");
+    calculator.person.continent = ("Oceania")
+    calculator.createPerson();
+    expect(calculator.person.lifespan).toEqual(61);
+  })
 })
