@@ -40,47 +40,47 @@ export class Calculator {
 
   yearsLeft() {
     return this.person.timeLeft = Math.round(this.person.lifespan - this.person.age);
-  }
+  };
 
   yearsLeftMercury() {
     this.person.timeLeft = Math.round(this.person.lifespan - this.person.age);
     return this.person.timeLeftMercury = Math.round(this.person.timeLeft / mercuryAgeMult);
-  }
+  };
 
   yearsLeftVenus() {
     this.person.timeLeft = Math.round(this.person.lifespan - this.person.age);
     return this.person.timeLeftVenus = Math.round(this.person.timeLeft / venusAgeMult);
-  }
+  };
 
   yearsLeftMars() {
     this.person.timeLeft = Math.round(this.person.lifespan - this.person.age);
     return this.person.timeLeftMars = Math.round(this.person.timeLeft / marsAgeMult);
-  }
+  };
 
   yearsLeftJupiter() {
     this.person.timeLeft = Math.round(this.person.lifespan - this.person.age);
     return this.person.timeLeftJupiter = Math.round(this.person.timeLeft / jupiterAgeMult);
-  }
+  };
   
   mercuryCalc() {
     return this.person.mercuryAge = Math.round(this.person.age / mercuryAgeMult);
-  }
+  };
 
   venusCalc() {
     return this.person.venusAge = Math.round(this.person.age / venusAgeMult);
-  }
+  };
 
   marsCalc() {
     return this.person.marsAge = Math.round(this.person.age / marsAgeMult);
-  }
+  };
 
   jupiterCalc() {
     return this.person.jupiterAge = Math.round(this.person.age / jupiterAgeMult);
-  }
-}
+  };
+};
 
 export class Person {
-  constructor(age, lifespan, mercuryAge, venusAge, marsAge, jupiterAge, gender, continent, timeLeft, timeLeftMercury, timeLeftVenus, timeLeftMars, timeLeftJupiter) {
+  constructor(age, lifespan, mercuryAge, venusAge, marsAge, jupiterAge, gender, continent, timeLeft, timeLeftMercury, timeLeftVenus, timeLeftMars, timeLeftJupiter, extraTime) {
     this.age = age;
     this.lifespan = lifespan;
     this.mercuryAge = mercuryAge;
@@ -94,5 +94,6 @@ export class Person {
     this.timeLeftVenus = timeLeftVenus;
     this.timeLeftMars = timeLeftMars;
     this.timeLeftJupiter = timeLeftJupiter;
+    this.extraTime = extraTime
   }
 }
