@@ -8,22 +8,22 @@ export class Calculator {
 
   mercuryCalc () {
     const mercuryAgeMult = 0.24;
-    return this.person.mercuryAge = Math.round(this.person.age * mercuryAgeMult);
+    return this.person.mercuryAge = Math.round(this.person.age / mercuryAgeMult);
   }
 
   venusCalc () {
     const venusAgeMult = 0.62;
-    return this.person.venusAge = Math.round(this.person.age * venusAgeMult);
+    return this.person.venusAge = Math.round(this.person.age / venusAgeMult);
   }
 
   marsCalc () {
     const marsAgeMult = 1.88;
-    return this.person.marsAge = Math.round(this.person.age * marsAgeMult);
+    return this.person.marsAge = Math.round(this.person.age / marsAgeMult);
   }
 
   jupiterCalc () {
     const jupiterAgeMult = 11.86;
-    return this.person.jupiterAge = Math.round(this.person.age * jupiterAgeMult);
+    return this.person.jupiterAge = Math.round(this.person.age / jupiterAgeMult);
   }
 }
 
