@@ -34,6 +34,10 @@ export class Calculator {
       this.person.lifespan = 76;
     };
   };
+
+  yearsLeft() {
+    // return this.person.timeleft = Math.round(this.person.lifespan - this.person.age);
+  }
   
   mercuryCalc() {
     const mercuryAgeMult = 0.24;

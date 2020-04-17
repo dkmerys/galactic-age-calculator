@@ -89,6 +89,7 @@ describe ('Calculator', () => {
     calculator.person.gender = ("Female");
     calculator.person.continent = ("Asia");
     calculator.createPerson();
+    calculator.yearsLeft();
     expect(calculator.person.timeleft).toEqual(50)
   })
 })
