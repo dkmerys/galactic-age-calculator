@@ -39,8 +39,13 @@ export class Calculator {
   };
 
   yearsLeft() {
+    // if (this.person.age > this.person.lifespan) {
+    //   this.person.extraTime = (this.person.age - this.person.lifespan)
+    // } else {
     return this.person.timeLeft = Math.round(this.person.lifespan - this.person.age);
+    // };
   };
+
 
   yearsLeftMercury() {
     this.person.timeLeft = Math.round(this.person.lifespan - this.person.age);
