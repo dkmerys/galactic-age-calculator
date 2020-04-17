@@ -36,7 +36,12 @@ export class Calculator {
   };
 
   yearsLeft() {
-    return this.person.timeleft = Math.round(this.person.lifespan - this.person.age);
+    return this.person.timeLeft = Math.round(this.person.lifespan - this.person.age);
+  }
+
+  yearsLeftMercury() {
+    this.person.timeLeft = Math.round(this.person.lifespan - this.person.age);
+    return this.person.timeLeftMercury = Math.round(this.person.timeLeft / 0.24);
   }
   
   mercuryCalc() {
@@ -61,7 +66,7 @@ export class Calculator {
 }
 
 export class Person {
-  constructor(age, lifespan, mercuryAge, venusAge, marsAge, jupiterAge, gender, continent, timeLeft, yearsLeftMercury, yearsLeftVenus, yearsLeftMars, yearsLeftJupiter) {
+  constructor(age, lifespan, mercuryAge, venusAge, marsAge, jupiterAge, gender, continent, timeLeft, timeLeftMercury, timeLeftVenus, timeLeftMars, timeLeftJupiter) {
     this.age = age;
     this.lifespan = lifespan;
     this.mercuryAge = mercuryAge;
@@ -71,9 +76,9 @@ export class Person {
     this.gender = gender;
     this.continent = continent;
     this.timeLeft = timeLeft;
-    this.yearsLeftMercury = yearsLeftMercury;
-    this.yearsLeftVenus = yearsLeftVenus;
-    this.yearsLeftMars = yearsLeftMars;
-    this.yearsLeftJupiter = yearsLeftJupiter;
+    this.timeLeftMercury = timeLeftMercury;
+    this.timeLeftVenus = timeLeftVenus;
+    this.timeLeftMars = timeLeftMars;
+    this.timeLeftJupiter = timeLeftJupiter;
   }
 }

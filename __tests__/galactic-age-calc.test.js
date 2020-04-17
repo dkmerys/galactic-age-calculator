@@ -90,7 +90,7 @@ describe ('Calculator', () => {
     calculator.person.continent = ("Asia");
     calculator.createPerson();
     calculator.yearsLeft();
-    expect(calculator.person.timeleft).toEqual(50)
+    expect(calculator.person.timeLeft).toEqual(50)
   })
 
   test('should give Person object average lifespan remaining on Mercury', () => {
@@ -100,7 +100,7 @@ describe ('Calculator', () => {
     calculator.person.gender = ("Female");
     calculator.person.continent = ("Asia");
     calculator.createPerson();
-    calculator.yearsLeft();
-    expect(calculator.person.yearsLeftMercury).toEqual(208)
+    calculator.yearsLeftMercury();
+    expect(calculator.person.timeLeftMercury).toEqual(208)
   })
 })
