@@ -20,7 +20,7 @@ describe ('Calculator', () => {
     expect(calculator.person.age).toEqual("25");
   })
 
-  test('should multiply person.age by mercAgeMult', () => {
+  test('should multiply person.age by mercuryAgeMult', () => {
     let calculator = new Calculator;
     let person = new Person("25", "79");
     calculator.person = person;
