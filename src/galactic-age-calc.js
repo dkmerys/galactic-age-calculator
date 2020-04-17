@@ -3,13 +3,13 @@
 export class Calculator {
 
   constructor() {
-   
+    this.person = {};
   }
 }
 
 export class Person {
-  
-  constructor() {
-   
+  constructor(age, lifespan) {
+    this.age = age;
+    this.lifespan = lifespan;
   }
 }

@@ -5,7 +5,7 @@ describe ('Calculator', () => {
 
   test('should create new Calculator object', () => {
     let calculator = new Calculator;
-    expect(calculator).toEqual({});
+    expect(calculator.person).toEqual({});
   })
 
   test('should create new Person object', () => {
@@ -16,6 +16,7 @@ describe ('Calculator', () => {
   test('should add Person object to Calculator as nested object', () => {
     let calculator = new Calculator;
     let person = new Person("25", "79")
+    calculator.person = person;
     expect(calculator.person.age).toEqual("25");
   })
 })
