@@ -92,4 +92,15 @@ describe ('Calculator', () => {
     calculator.yearsLeft();
     expect(calculator.person.timeleft).toEqual(50)
   })
+
+  test('should give Person object average lifespan remaining on Mercury', () => {
+    let calculator = new Calculator;
+    let person = new Person ("25");
+    calculator.person = person;
+    calculator.person.gender = ("Female");
+    calculator.person.continent = ("Asia");
+    calculator.createPerson();
+    calculator.yearsLeft();
+    expect(calculator.person.yearsLeftMercury).toEqual(208)
+  })
 })

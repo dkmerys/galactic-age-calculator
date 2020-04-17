@@ -61,7 +61,7 @@ export class Calculator {
 }
 
 export class Person {
-  constructor(age, lifespan, mercuryAge, venusAge, marsAge, jupiterAge, gender, continent, timeLeft) {
+  constructor(age, lifespan, mercuryAge, venusAge, marsAge, jupiterAge, gender, continent, timeLeft, yearsLeftMercury, yearsLeftVenus, yearsLeftMars, yearsLeftJupiter) {
     this.age = age;
     this.lifespan = lifespan;
     this.mercuryAge = mercuryAge;
@@ -70,6 +70,10 @@ export class Person {
     this.jupiterAge = jupiterAge;
     this.gender = gender;
     this.continent = continent;
-    this.timeLeft = timeLeft
+    this.timeLeft = timeLeft;
+    this.yearsLeftMercury = yearsLeftMercury;
+    this.yearsLeftVenus = yearsLeftVenus;
+    this.yearsLeftMars = yearsLeftMars;
+    this.yearsLeftJupiter = yearsLeftJupiter;
   }
 }
