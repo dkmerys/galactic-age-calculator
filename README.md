@@ -1,5 +1,4 @@
-will accept only numerical inputs
-will calculate user's age in Earth years
+Will create Calculator object
 will calculate user's age in Mercury years
 will calculate user's age in Venus years
 will calculate user's age in Mars years
