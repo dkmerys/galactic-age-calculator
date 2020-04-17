@@ -7,8 +7,31 @@ export class Calculator {
   }
 
   createPerson() {
-    if ((this.person.gender = "Female") && (this.person.continent = "Europe")) {
+    if ((this.person.gender === "Female") && (this.person.continent === "Africa")) {
+      this.person.lifespan = 65;
+    } else if ((this.person.gender === "Male") && (this.person.continent === "Africa")) {
+      this.person.lifespan = 61;
+    };
+    if ((this.person.gender === "Female") && (this.person.continent === "Asia")) {
+      this.person.lifespan = 75;
+    } else if ((this.person.gender === "Male") && (this.person.continent === "Asia")) {
+      this.person.lifespan = 71;
+    };if ((this.person.gender === "Female") && (this.person.continent === "Europe")) {
       this.person.lifespan = 82;
+    } else if ((this.person.gender === "Male") && (this.person.continent === "Europe")) {
+      this.person.lifespan = 75;
+    };if ((this.person.gender === "Female") && (this.person.continent === "Latin-South-America")) {
+      this.person.lifespan = 78;
+    } else if ((this.person.gender === "Male") && (this.person.continent === "Latin-South-America")) {
+      this.person.lifespan = 72;
+    };if ((this.person.gender === "Female") && (this.person.continent === "North-America")) {
+      this.person.lifespan = 81;
+    } else if ((this.person.gender === "Male") && (this.person.continent === "North-America")) {
+      this.person.lifespan = 76;
+    };if ((this.person.gender === "Female") && (this.person.continent === "Oceania")) {
+      this.person.lifespan = 80;
+    } else if ((this.person.gender === "Male") && (this.person.continent === "Oceania")) {
+      this.person.lifespan = 76;
     };
   };
 

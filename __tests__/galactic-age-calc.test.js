@@ -79,6 +79,6 @@ describe ('Calculator', () => {
     calculator.person.gender = ("Female");
     calculator.person.continent = ("Oceania")
     calculator.createPerson();
-    expect(calculator.person.lifespan).toEqual(61);
+    expect(calculator.person.lifespan).toEqual(80);
   })
 })
