@@ -24,7 +24,7 @@ describe ('Calculator', () => {
     let calculator = new Calculator;
     let person = new Person("25", "79");
     calculator.person = person;
-    mercuryAge();
-    expect(calculator.person.age).toEqual(6);
+    calculator.mercuryCalc();
+    expect(calculator.person.mercuryAge).toEqual(6);
   })
 })
