@@ -1,4 +1,7 @@
-
+const mercuryAgeMult = 0.24;
+const venusAgeMult = 0.62;
+const marsAgeMult = 1.88;
+const jupiterAgeMult = 11.86;
 
 export class Calculator {
   
@@ -41,26 +44,22 @@ export class Calculator {
 
   yearsLeftMercury() {
     this.person.timeLeft = Math.round(this.person.lifespan - this.person.age);
-    return this.person.timeLeftMercury = Math.round(this.person.timeLeft / 0.24);
+    return this.person.timeLeftMercury = Math.round(this.person.timeLeft / mercuryAgeMult);
   }
   
   mercuryCalc() {
-    const mercuryAgeMult = 0.24;
     return this.person.mercuryAge = Math.round(this.person.age / mercuryAgeMult);
   }
 
   venusCalc() {
-    const venusAgeMult = 0.62;
     return this.person.venusAge = Math.round(this.person.age / venusAgeMult);
   }
 
   marsCalc() {
-    const marsAgeMult = 1.88;
     return this.person.marsAge = Math.round(this.person.age / marsAgeMult);
   }
 
   jupiterCalc() {
-    const jupiterAgeMult = 11.86;
     return this.person.jupiterAge = Math.round(this.person.age / jupiterAgeMult);
   }
 }
